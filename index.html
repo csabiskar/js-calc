@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    .container_1 {
+        border: 5px solid black;
+        width: 270px;
+        height: 250px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        color: white;
+    }
+
+    .inp1 {
+        width: 260px;
+        height: 50px;
+        border: 5px solid black;
+        position: relative;
+        right: 5px;
+    }
+
+    input:hover {
+        background-color: rgb(245, 255, 47);
+    }
+
+    .btn:hover {
+        background-color: rgb(32, 255, 203);
+        border: 2px solid rgb(255, 92, 195);
+    }
+
+    .btn {
+        width: 60px;
+    }
+    h1::first-letter{
+        color: red;
+        font-style: italic;
+    }
+    h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 5px;
+    }
+</style>
+
+<body class="d-flex flex-column justify-content-center align-items-center">
+    <div class="mb-3">
+        <h1>Calculator</h1>
+    </div>
+    <div class="container_1 ">
+        <div>
+            <input type="text" id="cout" class="inp1">
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary" onclick="a('7')">7</button>
+                <button type="button" class="btn btn-primary" onclick="a('8')">8</button>
+                <button type="button" class="btn btn-primary" onclick="a('9')">9</button>
+                <button type="button" class="btn btn-danger" onclick="b()">C</button>
+            </div>
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary" onclick="a('4')">4</button>
+                <button type="button" class="btn btn-primary" onclick="a('5')">5</button>
+                <button type="button" class="btn btn-primary" onclick="a('6')">6</button>
+                <button type="button" class="btn btn-secondary" onclick="a('*')">*</button>
+            </div>
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary" onclick="a('1')">1</button>
+                <button type="button" class="btn btn-primary" onclick="a('2')">2</button>
+                <button type="button" class="btn btn-primary" onclick="a('3')">3</button>
+                <button type="button" class="btn btn-secondary" onclick="a('-')">-</button>
+            </div>
+            <div class="mt-2">
+                <button type="button" class="btn btn-primary" onclick="a('0')">0</button>
+                <button type="button" class="btn btn-success" onclick="c()">=</button>
+                <button type="button" class="btn btn-secondary" onclick="a('/')">/</button>
+                <button type="button" class="btn btn-secondary" onclick="a('+')">+</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
